@@ -1,0 +1,14 @@
+.section {
+    &--purple {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        background-color: #392B80;
+        background-image: url('../assets/images/wave.svg');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        opacity: 1;
+    }
+}

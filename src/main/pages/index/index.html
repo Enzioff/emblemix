@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+    <%= htmlWebpackPlugin.options.widgets.header %>
+
+        <section class="section section--purple">
+            <div class="container">
+                <div class="row">
+                <div class="left-section">
+                    <p class="left-section__text">производим</p>
+                        <h1 class="left-section__title">особенные
+                            сувениры</h1>
+                        <p class="left-section__subtitle">Изготавливаем металлические значки,
+                            медали, монеты, брелоки</p>
+                        <button class="button">Консультация</button>
+                </div>
+                <div class="right-section">
+                    <svg class="right-section__icon">
+                        <use xlink:href="./assets/sprite.svg#banner"></use>
+                    </svg>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="divider">
+                    <p class="divider__text">[ Немного о нас ]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <%= htmlWebpackPlugin.options.widgets.footer %>
+</body>
+</html>
