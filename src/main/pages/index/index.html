@@ -1,37 +1,240 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <%= htmlWebpackPlugin.options.widgets.head %>
-<body>
+  <%= htmlWebpackPlugin.options.widgets.head %>
+
+  <body>
     <%= htmlWebpackPlugin.options.widgets.header %>
+    <div class="main">
+      <section class="section section--light">
+        <div class="container">
+          <div class="row row--align">
+            <div class="left-section">
+              <p class="left-section__text">производим</p>
+              <h1 class="left-section__title">особенные сувениры</h1>
+              <p class="left-section__subtitle">
+                Изготавливаем металлические значки, медали, монеты, брелоки
+              </p>
+              <button class="button">Консультация</button>
+            </div>
+            <div class="right-section">
+              <svg class="right-section__icon">
+                <use xlink:href="./assets/sprite.svg#banner"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="divider">
+            <p class="divider__text">[ Немного о нас ]</p>
+          </div>
+          <div class="row">
+            <div class="about-left">
+              <h2 class="about-left__title title--main">Заголовок</h2>
+              <p class="about-left__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt.
+              </p>
+              <button class="button">Подробнее</button>
+            </div>
+            <div class="about-right">
+              <div class="about-right__block about-right__block--margin">
+                <svg class="about-right__icon">
+                  <use xlink:href="./assets/sprite.svg#phone"></use>
+                </svg>
+                <h3>Круглосуточная <span>поддержка</span></h3>
+                <p>
+                  Наша команда с уверенностью берётся за проекты любой
+                  сложности. Мы готовим эксклюзивный дизайн для всех клиентов
+                  и работаем на профессиональном оборудовании.
+                </p>
+              </div>
+              <div class="about-right__block">
+                <svg class="about-right__icon">
+                  <use xlink:href="./assets/sprite.svg#box"></use>
+                </svg>
+                <h3>Быстрая и <span>бесплатная</span> доставка</h3>
+                <p>
+                  Наша команда с уверенностью берётся за проекты любой
+                  сложности. Мы готовим эксклюзивный дизайн для всех клиентов
+                  и работаем на профессиональном оборудовании.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="divider">
+            <p class="divider__text">[ Отзывы ]</p>
+          </div>
+        </div>
+      </section>
 
-        <section class="section section--purple">
-            <div class="container">
-                <div class="row">
-                <div class="left-section">
-                    <p class="left-section__text">производим</p>
-                        <h1 class="left-section__title">особенные
-                            сувениры</h1>
-                        <p class="left-section__subtitle">Изготавливаем металлические значки,
-                            медали, монеты, брелоки</p>
-                        <button class="button">Консультация</button>
-                </div>
-                <div class="right-section">
-                    <svg class="right-section__icon">
-                        <use xlink:href="./assets/sprite.svg#banner"></use>
-                    </svg>
-                </div>
+      <section class="section">
+        <div class="container">
+          <div class="divider">
+            <p class="divider__text">[ всё ещё сомневаетесь? ]</p>
+          </div>
+          <div class="row row--margin">
+            <div class="doubt">
+              <div class="doubt__block">
+                <h3>Заголовок</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Odio, voluptatibus.
+                </p>
+              </div>
+              <div class="doubt__block doubt--margin">
+                <h3>Заголовок</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Odio, voluptatibus.
+                </p>
+              </div>
             </div>
+            <div class="doubt_center">
+              <img
+                class="doubt_center__image"
+                src="./assets/images/doubt.svg"
+                alt=""
+              />
             </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="divider">
-                    <p class="divider__text">[ Немного о нас ]
-                    </p>
+            <div class="doubt">
+              <div class="doubt__block doubt--right">
+                <h3>Заголовок</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Odio, voluptatibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="wrapper-left">
+              <h2 class="title--main">
+                давайте проконсультируем,<br />
+                это бесплатно!
+              </h2>
+              <form action="2" class="form">
+                <label class="form__item">
+                  <input
+                    type="text"
+                    class="input"
+                    name="NAME"
+                    placeholder="Ваше имя"
+                  />
+                </label>
+                <label class="form__item">
+                  <input
+                    type="tel"
+                    class="input"
+                    name="PHONE"
+                    placeholder="Номер телефона"
+                  />
+                </label>
+                <label class="form__item">
+                  <input
+                    type="email"
+                    class="input"
+                    name="EMAIL"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <button class="button">Консультация</button>
+                <span>
+                  Нажимая кнопку, я даю согласие на обработку
+                  <a href="#">персональных данных</a>
+                </span>
+              </form>
+            </div>
+            <div class="wrapper-right">
+              <div class="wrapper-right__block"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="divider">
+            <p class="divider__text">[ Faq ]</p>
+          </div>
+            <div class="faq">
+              <div class="faq__left">
+                <h2 class="title--main">Часто задаваемые вопросы</h2>
+                <p class="faq__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+                <div class="faq__block">
+                  <svg>
+                    <use xlink:href="./assets/sprite.svg#phone-white"></use>
+                  </svg>
+                  <p>
+                    Не нашли нужного ответа <br /><span
+                      >Связаться со службой поддержки</span
+                    >
+                  </p>
                 </div>
+              </div>
+              <div class="faq__right">
+                <div class="faq__box">
+                <button class="faq__accordion button--active">Как происходит доставка?</button>
+                <div><p class="faq__text faq--transparent">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.   </p>
+                </div>
+                </div>
+                
+                <div class="faq__box">
+                <button class="faq__accordion">Как происходит оплата?</button>
+                <div>
+                  
+                </div>
+              </div>
+              <div class="faq__box">
+                <button class="faq__accordion">Как оформить возврат ?</button>
+                <div>
+                  
+                </div>
+              </div>
+              <div class="faq__box">
+                <button class="faq__accordion">Мне необходима консультация. Куда обратиться ?</button>
+                <div>
+                  
+                </div>
+              </div>
+              </div>
             </div>
-        </section>
-
+        </div>
+      </section>
+      <section class="section section--rounded">
+        <div class="container">
+          <div class="adress">
+            <div class="adress-left">
+              <h2 class="title--main">Где нас найти</h2>
+              <p class="adress-left__text">Город Екатеринбург , улица Василия<br> Еремина , 12 , офис 334</p>
+              <a href="tel:+8(982)-625-22-27">8 (982)-625-22-27</a>
+              <a href="tel:+8 (922)-197-17-19">8 (922)-197-17-19</a>
+              <button class="button button--mt">бесплатная консультация</button>
+            </div>
+            <div class="adress-right">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor" width="674" height="428" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <%= htmlWebpackPlugin.options.widgets.footer %>
-</body>
+  </body>
 </html>

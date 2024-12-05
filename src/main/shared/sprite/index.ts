@@ -1,3 +1,10 @@
 import './icon-ball.svg';
 import './404.svg';
 import './banner.svg';
+import './phone.svg';
+import './box.svg';
+import './logo.svg';
+import './phone-white.svg';
+import './dnt.svg';
+import './cphone.svg';
+import './map.svg';

@@ -1,3 +1,28 @@
 .header {
-    background-color: blue;
+    &__wrapper{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        height: 86px;
+        margin-top: 20px;
+        padding: 18px 24px;
+        border-radius: 8px;
+        background-color: #fff;
+        gap: 60px;
+        z-index: 2;
+    }
+}
+.desktop-menu{
+    &__wrapper{
+        display: flex;
+        gap:48px;
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+        color: #392B80;
+    }
 }

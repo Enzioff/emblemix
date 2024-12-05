@@ -1,47 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+  <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link href="css/main.6334.css" rel="stylesheet"></head>
-<body>
+<link href="css/main.53c3.css" rel="stylesheet"></head>
+
+  <body>
     <header class="header">
     <div class="container">
-        <a href="./">
-            Главная
-        </a>
-        <a href="./404.html">
-            404
-        </a>
-        <a href="./list.html">
-            Список
-        </a>
+        <div class="header__wrapper">
+            <a href="/" class="header__logo">
+                <svg class="header__icon-logo">
+                    <use xlink:href="./assets/sprite.svg#logo"></use>
+                </svg>
+                <!-- <svg class="header__icon-logo hidden">
+                    <use xlink:href="./assets/sprite.svg#logo-small"></use>
+                </svg> -->
+            </a>
+            <div class="header__user-nav">
+                <!-- <div class="burger">
+                    <div class="burger__wrapper">
+                        <img src="./assets/images/icon-burger.svg" alt="">
+                        <img hidden src="./assets/images/icon-burger-cross.svg" alt="">
+                        <img hidden src="./assets/images/icon-burger-arrow.svg" alt="">
+                    </div>
+                </div> -->
+                <div class="desktop-menu">
+                    <div class="desktop-menu__wrapper">
+                        <a href="#" class="desktop-menu__link">О нас</a>
+                        <a href="#" class="desktop-menu__link">Контакты</a>
+                        <a href="#" class="desktop-menu__link">Услуги</a>
+                        <a href="#" class="desktop-menu__link">Категории</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- <div class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <nav class="nav">
+                    <a href="#" class="nav__link">О нас</a>
+                    <a href="#" class="nav__link">Контакты</a>
+                    <a href="#" class="nav__link">Услуги</a>
+                    <a href="#" class="nav__link">Категории</a>
+                </nav>
+            </div>
+        </div>
+    </div> -->
 </header>
+    <div class="main">
+      <section class="section section--light">
+        <div class="container">
+          <div class="row row--align">
+            <div class="left-section">
+              <p class="left-section__text">производим</p>
+              <h1 class="left-section__title">особенные сувениры</h1>
+              <p class="left-section__subtitle">
+                Изготавливаем металлические значки, медали, монеты, брелоки
+              </p>
+              <button class="button">Консультация</button>
+            </div>
+            <div class="right-section">
+              <svg class="right-section__icon">
+                <use xlink:href="./assets/sprite.svg#banner"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="divider">
+            <p class="divider__text">[ Немного о нас ]</p>
+          </div>
+          <div class="row">
+            <div class="about-left">
+              <h2 class="about-left__title title--main">Заголовок</h2>
+              <p class="about-left__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt.
+              </p>
+              <button class="button">Подробнее</button>
+            </div>
+            <div class="about-right">
+              <div class="about-right__block about-right__block--margin">
+                <svg class="about-right__icon">
+                  <use xlink:href="./assets/sprite.svg#phone"></use>
+                </svg>
+                <h3>Круглосуточная <span>поддержка</span></h3>
+                <p>
+                  Наша команда с уверенностью берётся за проекты любой
+                  сложности. Мы готовим эксклюзивный дизайн для всех клиентов
+                  и работаем на профессиональном оборудовании.
+                </p>
+              </div>
+              <div class="about-right__block">
+                <svg class="about-right__icon">
+                  <use xlink:href="./assets/sprite.svg#box"></use>
+                </svg>
+                <h3>Быстрая и <span>бесплатная</span> доставка</h3>
+                <p>
+                  Наша команда с уверенностью берётся за проекты любой
+                  сложности. Мы готовим эксклюзивный дизайн для всех клиентов
+                  и работаем на профессиональном оборудовании.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+            <div class="divider">
+                <p class="divider__text">[ Отзывы ]</p>
+              </div>
+        </div>
+      </section>
 
-    <div class="main ">
-        <section class="section section--purple">
-            <div class="container">
-                <div class="row">
-                <div class="left-section">
-                    <p class="left-section__text">производим</p>
-                        <h1 class="left-section__title">особенные
-                            сувениры</h1>
-                        <p class="left-section__subtitle">Изготавливаем металлические значки,
-                            медали, монеты, брелоки</p>
-                        <button class="button">Консультация</button>
-                </div>
-                <div class="right-section">
-                    <svg class="right-section__icon">
-                        <use xlink:href="./assets/sprite.svg#banner"></use>
+      <section class="section">
+        <div class="container"><div class="divider">
+          <p class="divider__text">[ всё ещё сомневаетесь? ]</p>
+        </div>
+      <div class="row row--margin">
+        <div class="doubt">
+          <div class="doubt__block ">
+            <h3>Заголовок</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatibus.</p>
+          </div>
+          <div class="doubt__block doubt--margin">
+            <h3>Заголовок</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatibus.</p>
+          </div>
+        </div>
+        <div class="doubt_center">
+          <img class="doubt_center__image" src="./assets/images/doubt.svg"alt="">
+          </div>
+        <div class="doubt">
+          <div class="doubt__block doubt--right">
+            <h3>Заголовок</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatibus.</p>
+          </div></div>
+      </div>
+      </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="wrapper-left">
+              <h2 class="title--main">давайте проконсультируем,<br> это бесплатно!</h2>
+              <form action="2" class="form">
+                <label class="form__item">
+                    <input type="text" class="input" name="NAME" placeholder="Ваше имя">
+                </label>
+                <label class="form__item">
+                  <input type="tel" class="input" name="PHONE" placeholder="Номер телефона">
+              </label>
+                <label class="form__item">
+                    <input type="email" class="input" name="EMAIL" placeholder="E-mail">
+                </label>
+                <button class="button">Консультация</button>
+                <span>
+                  Нажимая кнопку, я даю согласие на обработку <a href="#">персональных данных</a>
+                    </span>
+            </form>
+            </div>
+            <div class="wrapper-right">
+              <div class="wrapper-right__block">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="divider">
+              <p class="divider__text">[ Faq ]</p>
+            </div>
+            <div class="row">
+              <div class="faq">
+                <div class="faq__left">
+                  <h2 class="title--main">Часто задаваемые вопросы</h2>
+                  <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  <div class="faq__block">
+                    <svg>
+                      <use xlink:href="./assets/sprite.svg#phone-white"></use>
                     </svg>
+                  </div>
                 </div>
+                <div class="faq__right">
+
+                </div>
+              </div>
             </div>
-            </div>
-        </section>
+      </div>
+      </section>
     </div>
     <footer class="footer">
     <div class="container">
@@ -49,5 +212,5 @@
     </div>
 </footer>
 
-<script defer src="bundle.ff1c.js"></script></body>
+  <script defer src="bundle.ab8d.js"></script></body>
 </html>

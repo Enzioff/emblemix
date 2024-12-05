@@ -1,12 +1,27 @@
-.button{
-    max-width: 278px;
-    padding: 21px 39px;
-    color: #fff;
-    font-family: 'Damn';
-    font-size: 30px;
-    line-height: 33px;
-    text-transform: uppercase;
-    border: 1px solid linear-gradient(95.97deg, #E1738D 0%, #C00C2C 100%);
-    border-radius: 8px;
-    background: #CD1743;
+.button {
+  max-width: 377px;
+  padding: 21px 39px;
+  color: #fff;
+  font-family: "Damn";
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid linear-gradient(95.97deg, #e1738d 0%, #c00c2c 100%);
+  border-radius: 8px;
+  background: #cd1743;
+  &--active {
+    margin-bottom: 23px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #cd1743;
+  }
+  &--mt {
+    margin-top: 24px;
+  }
 }

@@ -1,0 +1,44 @@
+.contacts {
+  display: flex;
+  gap: 64px;
+  margin-top: 53px;
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    svg {
+      width: 46px;
+      height: 46px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: left;
+        color: #392b80;
+        span{
+            font-weight: 400;
+        }
+      }
+    }
+  }
+  h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    color: #cd1743;
+  }
+}
+.map{
+    position: relative;
+    iframe{
+        position: absolute;
+        top: -193px;
+        border-radius: 20px;
+    }
+}
