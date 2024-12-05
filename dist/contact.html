@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ru">
+  <head>
     <meta charset="UTF-8">
-    <title>List-page</title>
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link href="css/main.9bee.css" rel="stylesheet"></head>
-<body>
+  <body>
     <header class="header">
     <div class="container">
         <div class="header__wrapper">
@@ -49,7 +53,43 @@
         </div>
     </div> -->
 </header>
-    Page list
+    <div class="main">
+      <section class="section section--main">
+        <div class="container">
+          <h1 class="title--main">контакты</h1>
+          <div class="contacts">
+            <div class="contacts-left">
+              <h4>Телефон</h4>
+              <div class="contacts__block">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#cphone"></use>
+                </svg>
+                <div>
+                  <a href="8 (982)-625-22-27">8 (982)-625-22-27</a>
+                  <a href="8 (922)-197-17-19">8 (922)-197-17-19</a>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-right">
+              <h4>Адрес</h4>
+              <div class="contacts__block">
+                <svg>
+                  <use xlink:href="./assets/sprite.svg#map"></use>
+                </svg>
+                <div><a href="">620102, <span>Россия, Свердловская обл.,г.<br>Екатеринбург, улица Шаумяна, дом </span>83/1, <span>офис</span> 321</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--red">
+        <div class="container">
+            <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor" width="100%" height="394" frameborder="0"></iframe>
+        </div>
+        </div>
+      </section>
+    </div>
     <footer class="footer">
   <div class="container">
     <div class="footer-top">
@@ -79,5 +119,5 @@
   </div>
 </footer>
 
-<script defer src="bundle.f801.js"></script></body>
+  <script defer src="bundle.f801.js"></script></body>
 </html>
