@@ -1,0 +1,25 @@
+.feedback {
+  display: flex;
+  align-items: flex-end;
+  gap: 116px;
+
+  &__info {
+    max-width: 581px;
+  }
+
+  &__picture {
+    position: relative;
+    margin-bottom: 84px;
+    display: flex;
+    width: 434px;
+    height: 434px;
+    border-radius: 20px;
+    background-color: $lavender;
+    overflow: hidden;
+    box-shadow: -34px 34px 0 0 $accent;
+
+    img {
+      @include coverFull();
+    }
+  }
+}

@@ -1,12 +1,29 @@
-.title{
-    &--main{
-    font-family: "Damn";
-    font-size: 70px;
+.title {
+  font-family: $font-main;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 77px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: $primary;
+
+  @include r($mobile) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  &--main {
+    font-size: 140px;
     font-weight: 400;
-    line-height: 77px;
-    text-transform: uppercase;
+    line-height: 126px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #392b80;
+    color: $white;
+
+    @include r($mobile) {
+      font-size: 90px;
+      line-height: 81px;
     }
+  }
 }

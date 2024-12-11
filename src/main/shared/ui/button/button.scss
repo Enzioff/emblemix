@@ -1,27 +1,46 @@
 .button {
-  max-width: 377px;
-  padding: 21px 39px;
-  color: #fff;
-  font-family: "Damn";
-  font-size: 30px;
-  line-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 21px 28px 15px;
+  font-family: $font-main;
+  font-size: 38px;
+  line-height: 1;
   letter-spacing: 0.08em;
+  color: #fff;
+  width: max-content;
   text-align: center;
   text-transform: uppercase;
+  background: $accent;
   border: 1px solid linear-gradient(95.97deg, #e1738d 0%, #c00c2c 100%);
   border-radius: 8px;
-  background: #cd1743;
+  cursor: pointer;
+  transition: .2s linear;
+
+  &:hover {
+    box-shadow: 0 14px 24px 0 #50021540;
+  }
+
+  &:active {
+    background-color: #9A0122;
+  }
+
   &--active {
     margin-bottom: 23px;
     font-size: 21px;
     font-weight: 600;
     line-height: 32px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #cd1743;
+    color: $accent;
   }
-  &--mt {
-    margin-top: 24px;
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--wide-mob {
+    @include r($mobile) {
+      width: 100%;
+    }
   }
 }

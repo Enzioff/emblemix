@@ -1,0 +1,17 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 377px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}

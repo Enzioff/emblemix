@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <%= htmlWebpackPlugin.options.widgets.head %>
-  <body>
-    <%= htmlWebpackPlugin.options.widgets.header %>
-    <div class="main">
-      <section class="section section--main">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<div class="main">
+    <section class="section section--main">
         <div class="container">
-          <h1 class="title--main">контакты</h1>
-          <div class="contacts">
-            <div class="contacts-left">
-              <h4>Телефон</h4>
-              <div class="contacts__block">
-                <svg>
-                  <use xlink:href="./assets/sprite.svg#cphone"></use>
-                </svg>
-                <div>
-                  <a href="8 (982)-625-22-27">8 (982)-625-22-27</a>
-                  <a href="8 (922)-197-17-19">8 (922)-197-17-19</a>
+            <h1 class="title--main">контакты</h1>
+            <div class="contacts">
+                <div class="contacts-left">
+                    <h4>Телефон</h4>
+                    <div class="contacts__block">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#cphone"></use>
+                        </svg>
+                        <div>
+                            <a href="8 (982)-625-22-27">8 (982)-625-22-27</a>
+                            <a href="8 (922)-197-17-19">8 (922)-197-17-19</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="contacts-right">
+                    <h4>Адрес</h4>
+                    <div class="contacts__block">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#map"></use>
+                        </svg>
+                        <div>
+                            <a href="#">620102,
+                                <span>Россия, Свердловская обл.,г.<br>Екатеринбург, улица Шаумяна, дом </span>83/1,
+                                <span>офис</span> 321
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contacts-right">
-              <h4>Адрес</h4>
-              <div class="contacts__block">
-                <svg>
-                  <use xlink:href="./assets/sprite.svg#map"></use>
-                </svg>
-                <div><a href="">620102, <span>Россия, Свердловская обл.,г.<br>Екатеринбург, улица Шаумяна, дом </span>83/1, <span>офис</span> 321</a></div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="section--red">
+    </section>
+    <section class="section--red">
         <div class="container">
             <div class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor" width="100%" height="394" frameborder="0"></iframe>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor"
+                    width="100%" height="394" frameborder="0"></iframe>
+            </div>
         </div>
-        </div>
-      </section>
-    </div>
-    <%= htmlWebpackPlugin.options.widgets.footer %>
-  </body>
+    </section>
+</div>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+</body>
 </html>

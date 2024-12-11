@@ -1,35 +1,4 @@
-.section {
-  &--purple {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    background-color: #392b80;
-    background-image: url("../assets/images/wave.svg");
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: contain;
-    opacity: 1;
-  }
-  &--light {
-    background-color: #392b80;
-    background-image: url("../assets/images/main.svg");
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: contain;
-    opacity: 1;
-  }
-  &--rounded {
-    padding: 114px 0 129px;
-    border-radius: 150px 150px 0px 0px;
-    background-color: #d3d3ef;
-  }
-  &--main{
-    margin-top: 144px;
-  }
-  &--red{
-    height: 290px;
-    margin-top: 270px;
-    background: #CD1743;
-  }
+.main {
+  flex-grow: 1;
+  overflow-y: hidden;
 }

@@ -1,0 +1,89 @@
+.slider {
+
+  &--visible {
+    .swiper {
+      overflow: visible;
+    }
+
+    .swiper-slide {
+      opacity: 0;
+      pointer-events: none;
+      transition: .2s linear;
+    }
+
+    .swiper-slide-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.swiper-slide-active {
+  .article-review {
+    @include r($mobile) {
+      outline-color: $purple-light;
+      outline-width: 4px;
+      box-shadow: 0 30px 54px 0 #160A5424;
+
+      &__picture {
+        border-color: $accent;
+      }
+      &__author,
+      &__name {
+        color: $accent;
+      }
+      &__text {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.swiper {
+  &-control {
+    position: absolute;
+    top: 50%;
+    left: -55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 110px);
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 1;
+
+    @include r($mobile) {
+      position: static;
+      width: 100%;
+      margin-top: 30px;
+      transform: none;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $purple-light;
+    cursor: pointer;
+    pointer-events: auto;
+
+    svg {
+      display: flex;
+      width: 18px;
+      height: 18px;
+    }
+
+    &-prev {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.slider__btn--disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}

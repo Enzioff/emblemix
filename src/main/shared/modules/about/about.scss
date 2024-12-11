@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-columns: 476px 1fr;
+  justify-content: space-between;
+  gap: 119px;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 73px;
+
+    @include r($mobile) {
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+
+    @include r($mobile) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include r($mobile) {
+      gap: 54px;
+    }
+  }
+}

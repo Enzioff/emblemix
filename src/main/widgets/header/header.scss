@@ -1,28 +1,37 @@
 .header {
-    &__wrapper{
-        position: fixed;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        max-width: 1200px;
-        height: 86px;
-        margin-top: 20px;
-        padding: 18px 24px;
-        border-radius: 8px;
-        background-color: #fff;
-        gap: 60px;
-        z-index: 2;
+  position: fixed;
+  top: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  z-index: 2;
+
+  @include r($mobile) {
+    top: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 1200px;
+    padding: 8px 24px;
+
+    background-color: #fff;
+
+    border-radius: 8px;
+
+    @include r($mobile) {
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 24px;
+      margin-left: -24px;
+      margin-right: -24px;
+      border-radius: 0;
     }
-}
-.desktop-menu{
-    &__wrapper{
-        display: flex;
-        gap:48px;
-    }
-    &__link{
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 500;
-        color: #392B80;
-    }
+  }
 }

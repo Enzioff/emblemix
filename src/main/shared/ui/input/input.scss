@@ -1,0 +1,11 @@
+.input {
+  display: flex;
+  width: 100%;
+  padding: 21px 18px;
+
+  @include text();
+  color: $purple-gray;
+
+  border-radius: 8px;
+  background-color: $input;
+}

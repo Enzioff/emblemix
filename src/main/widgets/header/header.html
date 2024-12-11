@@ -1,31 +1,22 @@
 <header class="header">
     <div class="container">
         <div class="header__wrapper">
-            <a href="/" class="header__logo">
-                <svg class="header__icon-logo">
-                    <use xlink:href="./assets/sprite.svg#logo"></use>
-                </svg>
-                <!-- <svg class="header__icon-logo hidden">
-                    <use xlink:href="./assets/sprite.svg#logo-small"></use>
-                </svg> -->
+            <a href="/" class="logo">
+                <img src="./assets/images/logo.png" alt="">
             </a>
-            <div class="header__user-nav">
-                <!-- <div class="burger">
-                    <div class="burger__wrapper">
-                        <img src="./assets/images/icon-burger.svg" alt="">
-                        <img hidden src="./assets/images/icon-burger-cross.svg" alt="">
-                        <img hidden src="./assets/images/icon-burger-arrow.svg" alt="">
-                    </div>
-                </div> -->
-                <div class="desktop-menu">
-                    <div class="desktop-menu__wrapper">
-                        <a href="#" class="desktop-menu__link">О нас</a>
-                        <a href="contact.html" class="desktop-menu__link">Контакты</a>
-                        <a href="services.html" class="desktop-menu__link">Услуги</a>
-                        <a href="category.html" class="desktop-menu__link">Категории</a>
-                        <a href="404.html" class="desktop-menu__link">404</a>
-                    </div>
-                </div>
+            <nav class="nav mob-hidden">
+                <a href="#" class="nav__link">О нас</a>
+                <a href="#" class="nav__link">Контакты</a>
+                <a href="#" class="nav__link">Услуги</a>
+                <a href="#" class="nav__link">Категории</a>
+            </nav>
+            <a href="#" class="search-block search-block--right mob-hidden">
+                <svg class="search-block__icon icon">
+                    <use xlink:href="./assets/sprite.svg#icon-search"></use>
+                </svg>
+            </a>
+            <div class="burger">
+                <span class="burger__item"></span>
             </div>
         </div>
     </div>

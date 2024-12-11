@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/KennyNobody/polosatik#readme",
   "devDependencies": {
+    "@types/inputmask": "^5.0.7",
     "@types/node": "^18.14.1",
     "@types/svg-sprite-loader": "^3.9.9",
     "@types/webpack": "^5.28.0",
@@ -40,6 +41,7 @@
     "css-loader": "^6.7.3",
     "eslint": "^8.56.0",
     "html-webpack-plugin": "^5.5.0",
+    "inputmask": "^5.0.9",
     "mini-css-extract-plugin": "^2.7.7",
     "postcss": "^8.4.33",
     "postcss-loader": "^8.0.0",

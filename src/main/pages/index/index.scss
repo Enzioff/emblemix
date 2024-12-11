@@ -50,17 +50,25 @@
   align-items: center;
   gap: 32px;
   width: 100%;
-  margin-top: 132px;
+
+  @include r($mobile) {
+    gap: 10px;
+  }
 
   &__text {
-    font-family: "Damn";
-    font-size: 38px;
-    text-transform: uppercase;
-    line-height: 42px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    color: #cfcbe6;
     flex-shrink: 0;
+    font-family: $font-main;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #cfcbe6;
+
+    @include r($mobile) {
+      font-size: 24px;
+      line-height: 26px;
+    }
   }
 
   &:after {
@@ -195,80 +203,8 @@
     }
   }
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  max-width: 377px;
-  margin-top: 50px;
-  &__item {
-    padding: 21px 18px;
-    background: #eceaf6;
-    border-radius: 8px;
-  }
-  span {
-    font-size: 14px;
-    line-height: 16.1px;
-    font-weight: 400;
-    text-align: center;
-    color: #a39ad2;
-  }
-}
 
-.faq {
-  display: flex;
-  justify-content: space-between;
-  margin: 100px 0 150px;
-  &__left {
-    max-width: 313px;
-  }
-  &__text {
-    margin-top: 21px;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 400;
-  }
-  &__block {
-    display: flex;
-    align-items: center;
-    margin-top: 84px;
-    gap: 5px;
-    svg {
-      width: 47px;
-      height: 47px;
-    }
-    span {
-      font-weight: 600;
-      color: #473bf0;
-    }
-  }
-  &__right {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 733px;
-    border-radius: 18px;
-  }
-  &__box {
-    height: auto;
-    padding: 26px 0 25px 31px;
-    background-color: #f7f5ff;
-    border-radius: 18px;
-    box-shadow: 0px 30px 54px 0px #160a5424;
-  }
-  &__accordion {
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: left;
-    color: #392b80;
-  }
 
-  &--transparent {
-    max-width: 683px;
-    opacity: 70%;
-  }
-}
 .adress {
   display: flex;
   justify-content: space-between;
@@ -290,6 +226,6 @@
     }
   }
   &-right{
-    
+
   }
 }

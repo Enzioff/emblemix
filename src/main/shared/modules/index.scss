@@ -1,2 +1,17 @@
+@import './container/container';
+@import './main/main.scss';
+
+@import './section/section';
+@import './nav/nav';
+@import './intro/intro';
+@import './about/about';
+@import './slider/slider';
+@import './feedback/feedback';
+@import './form/form';
+@import './faq/faq';
+@import './address/address';
+
 @import './articles/articles.scss';
-@import './main/main.scss'
+@import './article-feature/article-feature';
+@import './article-review/article-review';
+@import './article-faq/article-faq';

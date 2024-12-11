@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -7,7 +11,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.2;
-  background-color: #F5F3FF;
+  background-color: $bg;
 
   overflow-x: hidden;
 }
@@ -17,16 +21,12 @@ body {
   overflow-x: hidden;
 }
 
-.container{
-  width: 1200px;
-  margin: 0 auto;
-}
 .section{
   &__purple{
     background: #ddd;
   }
-  
 }
+
 .row{
   display: flex;
   justify-content: space-between;
@@ -38,11 +38,19 @@ body {
   }
 }
 
-p{
-  font-size: 14px;
-  line-height: 28px;
-  color: #392B80;
+.mob-hidden {
+  @include r($mobile) {
+    display: none;
+  }
 }
-input{
-  color: #A39AD2;
+
+.desktop-hidden {
+  @include rmin($mobile + 1) {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-shrink: 0;
 }

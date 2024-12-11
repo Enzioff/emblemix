@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link href="css/main.9bee.css" rel="stylesheet"></head>
+<link href="css/main.css" rel="stylesheet"></head>
 
-  <body>
-    <header class="header">
+<body>
+<header class="header">
     <div class="container">
         <div class="header__wrapper">
-            <a href="/" class="header__logo">
-                <svg class="header__icon-logo">
-                    <use xlink:href="./assets/sprite.svg#logo"></use>
-                </svg>
-                <!-- <svg class="header__icon-logo hidden">
-                    <use xlink:href="./assets/sprite.svg#logo-small"></use>
-                </svg> -->
+            <a href="/" class="logo">
+                <img src="./assets/images/logo.png" alt="">
             </a>
-            <div class="header__user-nav">
-                <!-- <div class="burger">
-                    <div class="burger__wrapper">
-                        <img src="./assets/images/icon-burger.svg" alt="">
-                        <img hidden src="./assets/images/icon-burger-cross.svg" alt="">
-                        <img hidden src="./assets/images/icon-burger-arrow.svg" alt="">
-                    </div>
-                </div> -->
-                <div class="desktop-menu">
-                    <div class="desktop-menu__wrapper">
-                        <a href="#" class="desktop-menu__link">О нас</a>
-                        <a href="contact.html" class="desktop-menu__link">Контакты</a>
-                        <a href="services.html" class="desktop-menu__link">Услуги</a>
-                        <a href="category.html" class="desktop-menu__link">Категории</a>
-                        <a href="404.html" class="desktop-menu__link">404</a>
-                    </div>
-                </div>
+            <nav class="nav mob-hidden">
+                <a href="#" class="nav__link">О нас</a>
+                <a href="#" class="nav__link">Контакты</a>
+                <a href="#" class="nav__link">Услуги</a>
+                <a href="#" class="nav__link">Категории</a>
+            </nav>
+            <a href="#" class="search-block search-block--right mob-hidden">
+                <svg class="search-block__icon icon">
+                    <use xlink:href="./assets/sprite.svg#icon-search"></use>
+                </svg>
+            </a>
+            <div class="burger">
+                <span class="burger__item"></span>
             </div>
         </div>
     </div>
@@ -54,251 +45,352 @@
         </div>
     </div> -->
 </header>
-    <div class="main">
-      <section class="section section--light">
-        <div class="container">
-          <div class="row row--align">
-            <div class="left-section">
-              <p class="left-section__text">производим</p>
-              <h1 class="left-section__title">особенные сувениры</h1>
-              <p class="left-section__subtitle">
-                Изготавливаем металлические значки, медали, монеты, брелоки
-              </p>
-              <button class="button">Консультация</button>
-            </div>
-            <div class="right-section">
-              <svg class="right-section__icon">
-                <use xlink:href="./assets/sprite.svg#banner"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="divider">
-            <p class="divider__text">[ Немного о нас ]</p>
-          </div>
-          <div class="row">
-            <div class="about-left">
-              <h2 class="about-left__title title--main">Заголовок</h2>
-              <p class="about-left__text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt.
-              </p>
-              <button class="button">Подробнее</button>
-            </div>
-            <div class="about-right">
-              <div class="about-right__block about-right__block--margin">
-                <svg class="about-right__icon">
-                  <use xlink:href="./assets/sprite.svg#phone"></use>
-                </svg>
-                <h3>Круглосуточная <span>поддержка</span></h3>
-                <p>
-                  Наша команда с уверенностью берётся за проекты любой
-                  сложности. Мы готовим эксклюзивный дизайн для всех клиентов
-                  и работаем на профессиональном оборудовании.
-                </p>
-              </div>
-              <div class="about-right__block">
-                <svg class="about-right__icon">
-                  <use xlink:href="./assets/sprite.svg#box"></use>
-                </svg>
-                <h3>Быстрая и <span>бесплатная</span> доставка</h3>
-                <p>
-                  Наша команда с уверенностью берётся за проекты любой
-                  сложности. Мы готовим эксклюзивный дизайн для всех клиентов
-                  и работаем на профессиональном оборудовании.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="divider">
-            <p class="divider__text">[ Отзывы ]</p>
-          </div>
-        </div>
-      </section>
 
-      <section class="section">
+<div class="main">
+    <section class="section section--intro section--light">
         <div class="container">
-          <div class="divider">
-            <p class="divider__text">[ всё ещё сомневаетесь? ]</p>
-          </div>
-          <div class="row row--margin">
-            <div class="doubt">
-              <div class="doubt__block">
-                <h3>Заголовок</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Odio, voluptatibus.
-                </p>
-              </div>
-              <div class="doubt__block doubt--margin">
-                <h3>Заголовок</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Odio, voluptatibus.
-                </p>
-              </div>
+            <div class="intro">
+                <div class="intro__info">
+                    <p class="pretitle">производим</p>
+                    <h1 class="title title--main">особенные<br>сувениры</h1>
+                    <p class="text text--bold text--white text--upper">
+                        Изготавливаем металлические значки,<br class="mob-hidden">медали, монеты, брелоки
+                    </p>
+                    <button class="intro__button button button--wide-mob">Консультация</button>
+                </div>
+                <picture class="intro__picture mob-hidden">
+                    <img src="./assets/images/banner.svg" alt="">
+                </picture>
             </div>
-            <div class="doubt_center">
-              <img
-                class="doubt_center__image"
-                src="./assets/images/doubt.svg"
-                alt=""
-              />
-            </div>
-            <div class="doubt">
-              <div class="doubt__block doubt--right">
-                <h3>Заголовок</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Odio, voluptatibus.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="section">
+    </section>
+    <section class="section pt-132 ptm-60 pb-150 pbm-100">
         <div class="container">
-          <div class="row">
-            <div class="wrapper-left">
-              <h2 class="title--main">
-                давайте проконсультируем,<br />
-                это бесплатно!
-              </h2>
-              <form action="2" class="form">
-                <label class="form__item">
-                  <input
-                    type="text"
-                    class="input"
-                    name="NAME"
-                    placeholder="Ваше имя"
-                  />
-                </label>
-                <label class="form__item">
-                  <input
-                    type="tel"
-                    class="input"
-                    name="PHONE"
-                    placeholder="Номер телефона"
-                  />
-                </label>
-                <label class="form__item">
-                  <input
-                    type="email"
-                    class="input"
-                    name="EMAIL"
-                    placeholder="E-mail"
-                  />
-                </label>
-                <button class="button">Консультация</button>
-                <span>
-                  Нажимая кнопку, я даю согласие на обработку
-                  <a href="#">персональных данных</a>
-                </span>
-              </form>
+            <div class="divider mb-134 mbm-50">
+                <p class="divider__text">[ Немного о нас ]</p>
             </div>
-            <div class="wrapper-right">
-              <div class="wrapper-right__block"></div>
+            <div class="about">
+                <div class="about__info">
+                    <h2 class="about__title title">Заголовок</h2>
+                    <p class="about__text text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                        quae ab illo inventore veritatis et quasi architecto beatae
+                        vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi
+                        nesciunt.
+                    </p>
+                    <a href="#" class="button mob-hidden">Подробнее</a>
+                </div>
+                <div class="about__features">
+                    <article class="article-feature article-feature--end">
+                        <div class="article-feature__icon">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-feature__title">Круглосуточная <span>поддержка</span></h3>
+                        <p class="article-feature__text">
+                            Наша команда с уверенностью берётся за проекты любой
+                            сложности. Мы готовим эксклюзивный дизайн для всех клиентов
+                            и работаем на профессиональном оборудовании.
+                        </p>
+                        <img src="./assets/images/minbuble.svg" alt=""
+                             class="article-feature__decor article-feature__decor--left">
+                    </article>
+                    <article class="article-feature article-feature--start">
+                        <div class="article-feature__icon">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-box"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-feature__title">Быстрая и <span>бесплатная</span> доставка</h3>
+                        <p class="article-feature__text">
+                            Наша команда с уверенностью берётся за проекты любой
+                            сложности. Мы готовим эксклюзивный дизайн для всех клиентов
+                            и работаем на профессиональном оборудовании.
+                        </p>
+                        <img src="./assets/images/maxbuble.svg" alt=""
+                             class="article-feature__decor article-feature__decor--right">
+                    </article>
+                    <a href="#" class="button button--wide-mob desktop-hidden">Подробнее</a>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-      <section class="section">
+    </section>
+    <section class="section pb-154">
         <div class="container">
-          <div class="divider">
-            <p class="divider__text">[ Faq ]</p>
-          </div>
+            <div class="divider mb-60 mbm-50">
+                <p class="divider__text">[ Отзывы ]</p>
+            </div>
+            <div class="slider slider--visible" data-slider="default" data-slides="2">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article-review">
+                                <div class="article-review__author">
+                                    <picture class="article-review__picture">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <h3 class="article-review__name">Марина Ц.</h3>
+                                </div>
+                                <p class="article-review__text text">
+                                    Отличная компания, супер клиентоориентирована.
+                                    Заказывали значки по индивидуальному эскизу, 150 шт, нужно было очень срочно (за 21
+                                    день), очень мало компаний готовы выполнить работу за такой срок, а тут вышло даже
+                                    быстрее, при этом цена вполне адекватная. Значки как на эскизе, менеджер отвечает на
+                                    все вопросы (а их было немало...). Один восторг! Будем возвращаться ещё и
+                                    рекомендовать другим!"
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-review">
+                                <div class="article-review__author">
+                                    <picture class="article-review__picture">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <h3 class="article-review__name">Марина Ц.</h3>
+                                </div>
+                                <p class="article-review__text text">
+                                    Отличная компания, супер клиентоориентирована.
+                                    Заказывали значки по индивидуальному эскизу, 150 шт, нужно было очень срочно (за 21
+                                    день), очень мало компаний готовы выполнить работу за такой срок, а тут вышло даже
+                                    быстрее, при этом цена вполне адекватная. Значки как на эскизе, менеджер отвечает на
+                                    все вопросы (а их было немало...). Один восторг! Будем возвращаться ещё и
+                                    рекомендовать другим!"
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-review">
+                                <div class="article-review__author">
+                                    <picture class="article-review__picture">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <h3 class="article-review__name">Марина Ц.</h3>
+                                </div>
+                                <p class="article-review__text text">
+                                    Отличная компания, супер клиентоориентирована.
+                                    Заказывали значки по индивидуальному эскизу, 150 шт, нужно было очень срочно (за 21
+                                    день), очень мало компаний готовы выполнить работу за такой срок, а тут вышло даже
+                                    быстрее, при этом цена вполне адекватная. Значки как на эскизе, менеджер отвечает на
+                                    все вопросы (а их было немало...). Один восторг! Будем возвращаться ещё и
+                                    рекомендовать другим!"
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-control">
+                        <button class="swiper-btn swiper-btn-prev">
+                            <svg class="swiper-icon">
+                                <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-btn swiper-btn-next">
+                            <svg class="swiper-icon">
+                                <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section pb-150">
+        <div class="container">
+            <div class="divider mb-60">
+                <p class="divider__text">[ всё ещё сомневаетесь? ]</p>
+            </div>
+            <div class="row row--margin">
+                <div class="doubt">
+                    <div class="doubt__block">
+                        <h3>Заголовок</h3>
+                        <p class="text text--small">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.
+                        </p>
+                    </div>
+                    <div class="doubt__block doubt--margin">
+                        <h3>Заголовок</h3>
+                        <p class="text text--small">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.
+                        </p>
+                    </div>
+                </div>
+                <div class="doubt_center">
+                    <img
+                        class="doubt_center__image"
+                        src="./assets/images/doubt.svg"
+                        alt=""
+                    />
+                </div>
+                <div class="doubt">
+                    <div class="doubt__block doubt--right">
+                        <h3>Заголовок</h3>
+                        <p class="text text--small">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="feedback">
+                <div class="feedback__info">
+                    <h2 class="title mb-50">давайте проконсультируем, это бесплатно!</h2>
+                    <form action="#" class="form form--size">
+                        <label class="form__item">
+                            <input type="text" class="input" name="NAME" placeholder="Ваше имя">
+                        </label>
+                        <label class="form__item">
+                            <input type="tel" class="input" name="PHONE" placeholder="Номер телефона">
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input" name="EMAIL" placeholder="E-mail" data-email>
+                        </label>
+                        <button class="button button--wide" type="submit">консультация</button>
+                        <p class="form__text text text--small">
+                            Нажимая кнопку, я даю согласие на <a href="#">обработку персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+                <picture class="feedback__picture">
+                    <img src="./assets/images/metal.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-150">
+        <div class="container">
+            <div class="divider mb-100">
+                <p class="divider__text">[ Faq ]</p>
+            </div>
             <div class="faq">
-              <div class="faq__left">
-                <h2 class="title--main">Часто задаваемые вопросы</h2>
-                <p class="faq__text">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam.
-                </p>
-                <div class="faq__block">
-                  <svg>
-                    <use xlink:href="./assets/sprite.svg#phone-white"></use>
-                  </svg>
-                  <p>
-                    Не нашли нужного ответа <br /><span
-                      >Связаться со службой поддержки</span
-                    >
-                  </p>
+                <div class="faq__info">
+                    <h2 class="title">Часто задаваемые вопросы</h2>
+                    <p class="faq__text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam.
+                    </p>
+                    <div class="faq__footer">
+                        <svg class="faq__icon">
+                            <use xlink:href="./assets/sprite.svg#phone-white"></use>
+                        </svg>
+                        <p class="faq__text text text--small">
+                            Не нашли нужного ответа? <br/>
+                            <a href="#">Связаться со службой поддержки</a>
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="faq__right">
-                <div class="faq__box">
-                <button class="faq__accordion button--active">Как происходит доставка?</button>
-                <div><p class="faq__text faq--transparent">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.   </p>
+                <div class="faq__list">
+                    <article class="article-faq" data-accordion-item>
+                        <div class="article-faq__header" data-accordion-header>
+                            <h3 class="article-faq__title">Как происходит доставка?</h3>
+                            <svg class="article-faq__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                            </svg>
+                        </div>
+                        <div class="article-faq__content">
+                            <p class="article-faq__text text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident, similique sunt in culpa.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article-faq" data-accordion-item>
+                        <div class="article-faq__header" data-accordion-header>
+                            <h3 class="article-faq__title">Как происходит оплата?</h3>
+                            <svg class="article-faq__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                            </svg>
+                        </div>
+                        <div class="article-faq__content">
+                            <p class="article-faq__text text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident, similique sunt in culpa.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article-faq" data-accordion-item>
+                        <div class="article-faq__header" data-accordion-header>
+                            <h3 class="article-faq__title">Как оформить возврат ?</h3>
+                            <svg class="article-faq__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                            </svg>
+                        </div>
+                        <div class="article-faq__content">
+                            <p class="article-faq__text text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident, similique sunt in culpa.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article-faq" data-accordion-item>
+                        <div class="article-faq__header" data-accordion-header>
+                            <h3 class="article-faq__title">Мне необходима консультация. Куда обратиться ?</h3>
+                            <svg class="article-faq__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                            </svg>
+                        </div>
+                        <div class="article-faq__content">
+                            <p class="article-faq__text text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident, similique sunt in culpa.
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                </div>
-                
-                <div class="faq__box">
-                <button class="faq__accordion">Как происходит оплата?</button>
-                <div>
-                  
-                </div>
-              </div>
-              <div class="faq__box">
-                <button class="faq__accordion">Как оформить возврат ?</button>
-                <div>
-                  
-                </div>
-              </div>
-              <div class="faq__box">
-                <button class="faq__accordion">Мне необходима консультация. Куда обратиться ?</button>
-                <div>
-                  
-                </div>
-              </div>
-              </div>
             </div>
         </div>
-      </section>
-      <section class="section section--rounded">
+    </section>
+    <section class="section section--rounded">
         <div class="container">
-          <div class="adress">
-            <div class="adress-left">
-              <h2 class="title--main">Где нас найти</h2>
-              <p class="adress-left__text">Город Екатеринбург , улица Василия<br> Еремина , 12 , офис 334</p>
-              <a href="tel:+8(982)-625-22-27">8 (982)-625-22-27</a>
-              <a href="tel:+8 (922)-197-17-19">8 (922)-197-17-19</a>
-              <button class="button button--mt">бесплатная консультация</button>
+            <div class="address">
+                <div class="address__info">
+                    <h2 class="title">Где нас найти</h2>
+                    <p class="address__text text">
+                        Город Екатеринбург, улица Василия<br>
+                        Еремина, 12, офис 334
+                    </p>
+                    <div class="address__links">
+                        <a href="tel:+8(982)-625-22-27" class="link">8 (982)-625-22-27</a>
+                        <a href="tel:+8 (922)-197-17-19" class="link">8 (922)-197-17-19</a>
+                    </div>
+                    <button class="button">бесплатная консультация</button>
+                </div>
+                <div class="adress__map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor"
+                        width="674" height="428" frameborder="0"></iframe>
+                </div>
             </div>
-            <div class="adress-right">
-              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor" width="674" height="428" frameborder="0"></iframe>
-            </div>
-          </div>
         </div>
-      </section>
-    </div>
-    <footer class="footer">
+    </section>
+</div>
+<footer class="footer">
   <div class="container">
     <div class="footer-top">
-      <a href="/" class="footer__logo">
-        <svg class="footer__icon-logo">
-          <use xlink:href="./assets/sprite.svg#logo"></use>
-        </svg>
+      <a href="/" class="logo">
+        <img src="./assets/images/logo.png" alt="">
       </a>
-      <div class="footer__nav">
-        <a href="#" class="desktop-menu__link">О нас</a>
-        <a href="#" class="desktop-menu__link">Контакты</a>
-        <a href="#" class="desktop-menu__link">Услуги</a>
-        <a href="#" class="desktop-menu__link">Категории</a>
-      </div>
+      <nav class="footer__nav">
+        <a href="#" class="footer__link">О нас</a>
+        <a href="#" class="footer__link">Контакты</a>
+        <a href="#" class="footer__link">Услуги</a>
+      </nav>
       <div class="footer__links">
         <a href="tel:8 (982)-625-22-27">8 (982)-625-22-27</a>
         <a href="tel:8 (922)-197-17-19">8 (922)-197-17-19</a>
@@ -314,5 +406,5 @@
   </div>
 </footer>
 
-  <script defer src="bundle.f801.js"></script></body>
+<script defer src="bundle.js"></script></body>
 </html>
