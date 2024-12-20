@@ -1,4 +1,12 @@
 .main {
   flex-grow: 1;
   overflow-y: hidden;
+
+  &--offset {
+    margin-top: 144px;
+
+    @include r($mobile) {
+      margin-top: 118px;
+    }
+  }
 }

@@ -1,0 +1,37 @@
+.search-form {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 12px;
+    border-radius: 4px;
+    background-color: #EEE9FF;
+    width: 100%;
+    max-width: 476px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 21px;
+    height: 21px;
+    fill: #3429454D;
+  }
+
+  &__input {
+    display: flex;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $primary;
+
+    &::placeholder {
+      color: #3429454D;
+    }
+  }
+}

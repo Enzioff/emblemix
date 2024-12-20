@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="/" class="logo">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <nav class="nav mob-hidden">
+                <a href="#" class="nav__link">О нас</a>
+                <a href="#" class="nav__link">Контакты</a>
+                <a href="#" class="nav__link">Услуги</a>
+                <a href="#" class="nav__link">Категории</a>
+            </nav>
+            <a href="./search.html" class="search-block search-block--right mob-hidden">
+                <svg class="search-block__icon icon">
+                    <use xlink:href="./assets/sprite.svg#icon-search"></use>
+                </svg>
+            </a>
+            <div class="burger">
+                <span class="burger__item"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <nav class="nav">
+                    <a href="#" class="nav__link">О нас</a>
+                    <a href="#" class="nav__link">Контакты</a>
+                    <a href="#" class="nav__link">Услуги</a>
+                    <a href="#" class="nav__link">Категории</a>
+                </nav>
+            </div>
+        </div>
+    </div> -->
+</header>
+
+<div class="main main--offset">
+    <section class="section pb-148 pbm-90">
+        <div class="container">
+            <h1 class="title mb-30 mbm-40">Поиск</h1>
+            <div class="search-page">
+                <form class="search-form" action="" method="get">
+                    <label class="search-form__item">
+                        <svg class="search-form__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-search"></use>
+                        </svg>
+                        <input class="search-form__input" type="search" name="q" placeholder="Я ищу...">
+                    </label>
+                </form>
+                <div class="search-page__content">
+                    <a href="#" class="article-search">
+                        <h3 class="article-search__title">Заголовок</h3>
+                        <p class="article-search__text">Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit</span>, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                    </a>
+                    <a href="#" class="article-search">
+                        <h3 class="article-search__title">Заголовок</h3>
+                        <p class="article-search__text">Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit</span>, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                    </a>
+                    <a href="#" class="article-search">
+                        <h3 class="article-search__title">Заголовок</h3>
+                        <p class="article-search__text">Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit</span>, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                    </a>
+                    <a href="#" class="article-search">
+                        <h3 class="article-search__title">Заголовок</h3>
+                        <p class="article-search__text">Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit</span>, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                    </a>
+                    <a href="#" class="article-search">
+                        <h3 class="article-search__title">Заголовок</h3>
+                        <p class="article-search__text">Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit</span>, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                    </a>
+                </div>
+                <button class="button button--wide-mob">Показать ещё</button>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="/" class="logo">
+        <img src="./assets/images/logo.png" alt="">
+      </a>
+      <nav class="footer__nav">
+        <a href="#" class="footer__link">О нас</a>
+        <a href="#" class="footer__link">Контакты</a>
+        <a href="#" class="footer__link">Услуги</a>
+      </nav>
+      <div class="footer__links">
+        <a href="tel:8 (982)-625-22-27">8 (982)-625-22-27</a>
+        <a href="tel:8 (922)-197-17-19">8 (922)-197-17-19</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2013–2024. Все права защищены.</p>
+        <a href="#"><span>Политика конфиденциальности</span></a>
+        <a href=""><span>Разработка сайта</span><svg class="footer-bottom__icon">
+            <use xlink:href="./assets/sprite.svg#dnt"></use>
+          </svg></a>
+    </div>
+  </div>
+</footer>
+
+<style>
+    .temp {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .temp__link {
+        font-size: 16px;
+    }
+</style>
+<div class="temp">
+    <a href="./index.html" class="temp__link">Главная</a>
+    <a href="./about.html" class="temp__link">О нас</a>
+    <a href="./services.html" class="temp__link">Услуги</a>
+    <a href="./category.html" class="temp__link">Категории</a>
+    <a href="./single-category.html" class="temp__link">Категории деталка</a>
+    <a href="./contact.html" class="temp__link">Контакты</a>
+    <a href="./404.html" class="temp__link">404</a>
+    <a href="./search.html" class="temp__link">Поиск</a>
+    <a href="#" class="temp__link">Политика</a>
+</div>
+
+<script defer src="bundle.js"></script></body>
+</html>

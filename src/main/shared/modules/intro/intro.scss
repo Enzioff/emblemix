@@ -10,6 +10,19 @@
     padding-top: 148px;
   }
 
+  &--center {
+    justify-content: center;
+    padding-bottom: 0;
+
+    .intro__info {
+      align-items: center;
+
+      .title {
+        text-align: center;
+      }
+    }
+  }
+
   &__info {
     display: flex;
     flex-direction: column;

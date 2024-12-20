@@ -1,18 +1,24 @@
-.ntfound{
-    text-align: center;
-    margin: 176px 0 124px;
-    &__icon{
-        width: 100%;
-        height: 415px;
-        
-    }
-    &__text{
-        margin: 46px 0 50px;
-        font-family: 'Open Sans';
-        font-size: 24px;
-        line-height: 36px;
-        font-weight: 500;
-        color: #fff;
-    }
+.ntfound {
+  text-align: center;
+  margin: 176px 0 124px;
+
+  &__icon {
+    width: 100%;
+    height: 415px;
+
+  }
+
+  &__text {
+    margin: 46px 0 50px;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
 
 }

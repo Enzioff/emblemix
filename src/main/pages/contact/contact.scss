@@ -1,12 +1,17 @@
 .contacts {
   display: flex;
   gap: 64px;
-  margin-top: 53px;
+  @include r($mobile) {
+    flex-direction: column;
+    gap: 20px;
+  }
   &__block {
     display: flex;
     align-items: center;
     gap: 8px;
     svg {
+      display: flex;
+      flex-shrink: 0;
       width: 46px;
       height: 46px;
     }

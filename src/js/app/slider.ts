@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import {Navigation, Pagination, Thumbs} from "swiper/modules";
+import {EffectCoverflow, Navigation, Pagination, Thumbs} from "swiper/modules";
 
 class Slider {
     el;
@@ -35,6 +35,12 @@ class Slider {
                 break;
             case 'thumbs':
                 this.initThumbsSlider();
+                break;
+            case 'carousel':
+                this.initCarouselSlider();
+                break;
+            case 'auto':
+                this.initAutoSlider();
                 break;
         }
     }
@@ -107,6 +113,34 @@ class Slider {
             thumbs: {
                 swiper: thumbSlider,
             },
+        })
+    }
+    
+    initCarouselSlider() {
+        const slider = this.el.querySelector('.swiper');
+        new Swiper(slider, {
+            modules: [EffectCoverflow],
+            slidesPerView: 5,
+            spaceBetween: 40,
+            effect: "coverflow",
+            centeredSlides: true,
+            initialSlide: 2,
+            loop: true,
+            coverflowEffect: {
+                rotate: 15,
+                stretch: -10,
+                depth: -80,
+                modifier: 1,
+                slideShadows: false,
+            },
+        })
+    }
+    
+    initAutoSlider() {
+        const slider = this.el.querySelector('.swiper');
+        new Swiper(slider, {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
         })
     }
 }

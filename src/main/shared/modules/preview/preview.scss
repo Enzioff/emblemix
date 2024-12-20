@@ -1,0 +1,42 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 60px 20px 50px;
+    min-height: 500px;
+    background-color: $lavender;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include r($mobile) {
+      height: 600px;
+      padding: 60px 7px 14px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .button {
+      margin: auto auto 0;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include r($mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+}

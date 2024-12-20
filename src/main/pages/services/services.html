@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
 <%= htmlWebpackPlugin.options.widgets.head %>
-
-    <body>
-        <%= htmlWebpackPlugin.options.widgets.header %>
-            <div class="main">
-                <section class="section section--main">
-                    <div class="container">
-                        <h1 class="title--main">Мы предоставляем полный спектр изготовления</h1>
-                        <div class="services">
-                            <a class="services-box">
-                                <p>01</p>
-                                <h3>Идея / Макет</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>02</p>
-                                <h3>Разработка дизана</h3>
-                            </a>
-                            <a class="services-box"><img src="./assets/images/lizard.svg" alt="" />
-                            </a>
-                            <a class="services-box">
-                                <p>03</p>
-                                <h3>Утверждение дизайна</h3>
-                            </a>
-                            <a class="services-box"><img src="./assets/images/lizard.svg" alt="" />
-                            </a>
-                            <a class="services-box">
-                                <p>04</p>
-                                <h3>Штамповка / Литьё</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>05</p>
-                                <h3>Проверка формы</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>06</p>
-                                <h3>ЧПУ</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>07</p>
-                                <h3>Вырубная форма<br>(только для штамповки)</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>08</p>
-                                <h3>Установка крепежа</h3>
-                            </a>
-
-                            <a class="services-box"><img src="./assets/images/lizard.svg" alt="" />
-                            </a>
-                            <a class="services-box">
-                                <p>09</p>
-                                <h3>Полировка</h3>
-                            </a>
-                            <a class="services-box"><img src="./assets/images/lizard.svg" alt="" />
-                            </a>
-                            <a class="services-box">
-                                <p>10</p>
-                                <h3>Покрытие</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>11</p>
-                                <h3>Окрашивание</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>12</p>
-                                <h3>Матирование<br>
-                                    (для твердой эмали)</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>13</p>
-                                <h3>Запекание</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>14</p>
-                                <h3>Покрытие эпоксидной смолой</h3>
-                            </a>
-                            <a class="services-box">
-                                <img src="./assets/images/lizard.svg" alt="" />
-                            </a>
-                            <a class="services-box">
-                                <p>15</p>
-                                <h3>Проверка
-                                    качества и упаковка</h3>
-                            </a>
-                            <a class="services-box">
-                                <p>16</p>
-                                <h3>Отгрузка</h3>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main main--offset">
+    <section class="section pb-150">
+        <div class="container">
+            <h1 class="title mb-50 mbm-40">Мы предоставляем полный спектр изготовления</h1>
+            <div class="services">
+                <a href="#" class="article-service">
+                    <p class="article-service__count">01</p>
+                    <h2 class="article-service__title">Идея / Макет</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">02</p>
+                    <h2 class="article-service__title">Разработка<br>дизайна</h2>
+                </a>
+                <a href="#" class="article-service article-service--picture">
+                    <picture class="article-service__picture">
+                        <img src="./assets/images/lizard.png" alt="">
+                    </picture>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">03</p>
+                    <h2 class="article-service__title">Утверждение<br>дизайна</h2>
+                </a>
+                <a href="#" class="article-service article-service--picture">
+                    <picture class="article-service__picture">
+                        <img src="./assets/images/lizard.png" alt="">
+                    </picture>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">04</p>
+                    <h2 class="article-service__title">Штамповка /<br>Литьё</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">05</p>
+                    <h2 class="article-service__title">Проверка формы</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">06</p>
+                    <h2 class="article-service__title">ЧПУ</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">07</p>
+                    <h2 class="article-service__title">Вырубная форма<br>
+                        (только для штамповки)</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">08</p>
+                    <h2 class="article-service__title">Установка крепежа</h2>
+                </a>
+                <a href="#" class="article-service article-service--picture">
+                    <picture class="article-service__picture">
+                        <img src="./assets/images/lizard.png" alt="">
+                    </picture>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">09</p>
+                    <h2 class="article-service__title">Полировка</h2>
+                </a>
+                <a href="#" class="article-service article-service--picture">
+                    <picture class="article-service__picture">
+                        <img src="./assets/images/lizard.png" alt="">
+                    </picture>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">10</p>
+                    <h2 class="article-service__title">Покрытие</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">11</p>
+                    <h2 class="article-service__title">Открашивание</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">12</p>
+                    <h2 class="article-service__title">Матирование<br>
+                        (для твердой эмали)</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">13</p>
+                    <h2 class="article-service__title">Запекание</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">14</p>
+                    <h2 class="article-service__title">Покрытие эпоксидной смолой</h2>
+                </a>
+                <a href="#" class="article-service article-service--picture">
+                    <picture class="article-service__picture">
+                        <img src="./assets/images/lizard.png" alt="">
+                    </picture>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">15</p>
+                    <h2 class="article-service__title">Проверка<br>
+                        качества и упаковка</h2>
+                </a>
+                <a href="#" class="article-service">
+                    <p class="article-service__count">16</p>
+                    <h2 class="article-service__title">Отгрузка</h2>
+                </a>
             </div>
-            </div>
-            <%= htmlWebpackPlugin.options.widgets.footer %>
-    </body>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
 
 </html>

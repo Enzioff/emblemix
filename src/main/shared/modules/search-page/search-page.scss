@@ -1,0 +1,19 @@
+.search-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include r($mobile) {
+      gap: 16px;
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+}

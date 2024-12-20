@@ -17,6 +17,11 @@
   cursor: pointer;
   transition: .2s linear;
 
+  @include r($mobile) {
+    padding: 11px 13px;
+    font-size: 37px;
+  }
+
   &:hover {
     box-shadow: 0 14px 24px 0 #50021540;
   }

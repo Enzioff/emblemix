@@ -8,7 +8,20 @@
     background-image: url("../assets/images/wave.svg");
     background-repeat: no-repeat;
     background-position: center right;
-    background-size: contain;
+    background-size: auto;
+
+    @include r($mobile) {
+      background-image: none;
+    }
+
+    &-no-bg {
+      display: flex;
+      flex-direction: column;
+
+      background-color: #392b80;
+
+      overflow: hidden;
+    }
   }
 
   &--light {
@@ -28,10 +41,6 @@
     padding: 114px 0 129px;
     border-radius: 150px 150px 0px 0px;
     background-color: #d3d3ef;
-  }
-
-  &--main {
-    margin-top: 144px;
   }
 
   &--red {

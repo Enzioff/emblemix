@@ -1,0 +1,41 @@
+.article-search {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 24px 14px;
+  border-radius: 8px;
+  background-color: #EEE9FF;
+  transition: .2s linear;
+
+  &:hover {
+    box-shadow: 0 30px 54px 0 #160A5424;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $primary-black;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4C3E8B;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    @include r($mobile) {
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

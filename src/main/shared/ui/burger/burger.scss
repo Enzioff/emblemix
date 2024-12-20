@@ -1,9 +1,13 @@
 .burger {
   position: relative;
-  display: flex;
+  display: none;
   width: 20px;
   height: 14px;
   cursor: pointer;
+
+  @include r($mobile) {
+    display: flex;
+  }
 
   &.active {
 
