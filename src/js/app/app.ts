@@ -4,6 +4,7 @@ import Mask from "./mask";
 import Menu from "./menu";
 import Form from "./form";
 import {Fancybox} from "@fancyapps/ui";
+import Tabs from "./tabs";
 
 class App {
     constructor() {
@@ -17,6 +18,7 @@ class App {
         this.createMenu()
         this.createForm()
         this.createFancybox()
+        this.createTabs()
     }
     
     createSlider = () => {
@@ -59,6 +61,15 @@ class App {
     createFancybox = () => {
         Fancybox.bind('[data-fancybox]', {
             defaultType: 'inline'
+        })
+    }
+    
+    createTabs = () => {
+        const tabs = document.querySelectorAll('[data-tabs]')
+        if (!tabs) return;
+        
+        tabs.forEach(tab => {
+            new Tabs(tab)
         })
     }
 }

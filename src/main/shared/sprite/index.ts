@@ -11,3 +11,4 @@ import './icon-search.svg';
 import './icon-arrow.svg';
 import './icon-chevrone.svg';
 import './icon-accept.svg';
+import './icon-deny.svg';

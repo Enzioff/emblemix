@@ -73,3 +73,9 @@ body {
 .hidden {
   display: none;
 }
+
+.mtm-50p {
+  @include r($mobile) {
+    margin-top: 50%;
+  }
+}

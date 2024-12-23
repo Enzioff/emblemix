@@ -134,7 +134,7 @@ class Form {
         return `
             <div class="modal-response" id="modal-response" data-response>
                 <svg class="modal-response__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                    <use xlink:href="./assets/sprite.svg#${error ? 'icon-deny' : 'icon-accept'}"></use>
                 </svg>
                 <h3 class="modal-response__title">${error ? 'Ошибка' : 'ваша заявка отправлена'}</h3>
                 <p class="modal-response__text">${error ? error : 'Наш менеджер свяжется с вами'}</p>
@@ -152,7 +152,7 @@ class Form {
         return `
             <div class="modal-response" id="modal-response" data-response>
                 <svg class="modal-response__icon">
-                    <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                    <use xlink:href="./assets/sprite.svg#icon-deny"></use>
                 </svg>
                 <h3 class="modal-response__title">Ошибка</h3>
                 <p class="modal-response__text">
