@@ -1,0 +1,66 @@
+.modal-response {
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+  width: auto;
+  min-width: 283px;
+  border-radius: 20px;
+  background-color: $white;
+  transform: translateX(-50%);
+  animation: in .3s linear 1;
+  transition: .2s linear;
+  z-index: 9999;
+
+  &.out {
+    animation: out .3s linear 1;
+  }
+
+  &__icon {
+    display: flex;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-family: $font-main;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $primary;
+  }
+
+  &__text {
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: $primary;
+  }
+}
+
+@keyframes in {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes out {
+  from {
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-100%);
+  }
+}

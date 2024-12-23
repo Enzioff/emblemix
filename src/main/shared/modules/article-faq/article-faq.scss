@@ -7,6 +7,14 @@
   border-radius: 14px;
   transition: .2s linear;
 
+  &:hover {
+    box-shadow: 0 30px 54px 0 #160A5424;
+  }
+
+  @include r($mobile) {
+    padding: 0 12px;
+  }
+
   &.active {
     box-shadow: 0 30px 54px 0 #160A5424;
 
@@ -30,6 +38,10 @@
     gap: 20px;
     padding: 25px 0;
     cursor: pointer;
+
+    @include r($mobile) {
+      padding: 18px 0;
+    }
   }
 
   &__title {
@@ -39,6 +51,10 @@
     line-height: 32px;
     color: $primary;
     transition: .2s linear;
+
+    @include r($mobile) {
+      font-size: 16px;
+    }
   }
 
   &__content {

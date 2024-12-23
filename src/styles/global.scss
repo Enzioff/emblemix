@@ -30,6 +30,12 @@ body {
 .row{
   display: flex;
   justify-content: space-between;
+
+  @include r($mobile) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
   &--align{
     align-items:center
   }
@@ -53,4 +59,17 @@ body {
 .logo {
   display: flex;
   flex-shrink: 0;
+
+  @include r($mobile) {
+    width: 156px;
+    height: 32px;
+  }
+}
+
+.fixed {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }

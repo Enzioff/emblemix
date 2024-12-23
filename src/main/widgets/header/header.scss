@@ -26,12 +26,15 @@
     border-radius: 8px;
 
     @include r($mobile) {
+      position: relative;
       justify-content: space-between;
       gap: 20px;
       padding: 18px 24px;
       margin-left: -24px;
       margin-right: -24px;
       border-radius: 0;
+      z-index: 1;
+      backdrop-filter: blur(24px)
     }
   }
 }

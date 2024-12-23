@@ -14,7 +14,7 @@
                     <p class="text text--bold text--white text--upper">
                         Изготавливаем металлические значки,<br class="mob-hidden">медали, монеты, брелоки
                     </p>
-                    <button class="intro__button button button--wide-mob">Консультация</button>
+                    <button class="intro__button button button--wide-mob" data-fancybox data-src="feedback">Консультация</button>
                 </div>
                 <picture class="intro__picture mob-hidden">
                     <img src="./assets/images/banner.svg" alt="">
@@ -77,7 +77,7 @@
             </div>
         </div>
     </section>
-    <section class="section pb-154">
+    <section class="section pb-154 pbm-70">
         <div class="container">
             <div class="divider mb-60 mbm-50">
                 <p class="divider__text">[ Отзывы ]</p>
@@ -157,7 +157,7 @@
         </div>
     </section>
     
-    <section class="section pb-150">
+    <section class="section pb-150 pbm-100">
         <div class="container">
             <div class="divider mb-60">
                 <p class="divider__text">[ всё ещё сомневаетесь? ]</p>
@@ -204,13 +204,13 @@
         <div class="container">
             <div class="feedback">
                 <div class="feedback__info">
-                    <h2 class="title mb-50">давайте проконсультируем, это бесплатно!</h2>
-                    <form action="#" class="form form--size">
+                    <h2 class="title mob-hidden mb-50">давайте проконсультируем, это бесплатно!</h2>
+                    <form action="#" class="form form--size" data-form>
                         <label class="form__item">
                             <input type="text" class="input" name="NAME" placeholder="Ваше имя">
                         </label>
                         <label class="form__item">
-                            <input type="tel" class="input" name="PHONE" placeholder="Номер телефона">
+                            <input type="tel" class="input" name="PHONE" placeholder="Номер телефона" data-phone>
                         </label>
                         <label class="form__item">
                             <input type="text" class="input" name="EMAIL" placeholder="E-mail" data-email>
@@ -224,10 +224,11 @@
                 <picture class="feedback__picture">
                     <img src="./assets/images/metal.png" alt="">
                 </picture>
+                <h2 class="title desktop-hidden">давайте проконсультируем, это бесплатно!</h2>
             </div>
         </div>
     </section>
-    <section class="section pb-150">
+    <section class="section pb-150 pbm-70">
         <div class="container">
             <div class="divider mb-100">
                 <p class="divider__text">[ Faq ]</p>
@@ -239,7 +240,7 @@
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                         accusantium doloremque laudantium, totam rem aperiam.
                     </p>
-                    <div class="faq__footer">
+                    <div class="faq__footer mob-hidden">
                         <svg class="faq__icon">
                             <use xlink:href="./assets/sprite.svg#phone-white"></use>
                         </svg>
@@ -310,6 +311,15 @@
                             </p>
                         </div>
                     </article>
+                    <div class="faq__footer desktop-hidden">
+                        <svg class="faq__icon">
+                            <use xlink:href="./assets/sprite.svg#phone-white"></use>
+                        </svg>
+                        <p class="faq__text text text--small">
+                            Не нашли нужного ответа? <br/>
+                            <a href="#">Связаться со службой поддержки</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -329,7 +339,7 @@
                     </div>
                     <button class="button">бесплатная консультация</button>
                 </div>
-                <div class="adress__map">
+                <div class="address__map">
                     <iframe
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor"
                         width="674" height="428" frameborder="0"></iframe>
@@ -339,6 +349,7 @@
     </section>
 </div>
 <%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.hidden %>
 <%= htmlWebpackPlugin.options.widgets.temp %>
 </body>
 </html>

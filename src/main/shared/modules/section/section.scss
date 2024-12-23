@@ -41,6 +41,12 @@
     padding: 114px 0 129px;
     border-radius: 150px 150px 0px 0px;
     background-color: #d3d3ef;
+
+    @include r($mobile) {
+      padding-top: 50px;
+      padding-bottom: 0;
+      border-radius: 0;
+    }
   }
 
   &--red {

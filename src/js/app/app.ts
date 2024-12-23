@@ -1,16 +1,22 @@
 import Slider from "./slider";
 import Accordion from "./Accordion";
 import Mask from "./mask";
+import Menu from "./menu";
+import Form from "./form";
+import {Fancybox} from "@fancyapps/ui";
 
 class App {
     constructor() {
         this.init();
     }
-
+    
     init = () => {
         this.createSlider()
         this.createAccordion()
         this.createMask()
+        this.createMenu()
+        this.createForm()
+        this.createFancybox()
     }
     
     createSlider = () => {
@@ -23,7 +29,7 @@ class App {
     
     createAccordion = () => {
         const accordions = document.querySelectorAll('[data-accordion-item]')
-    
+        
         if (!accordions) return
         
         accordions.forEach(accordion => {
@@ -33,6 +39,27 @@ class App {
     
     createMask = () => {
         new Mask()
+    }
+    
+    createMenu = () => {
+        const menu = document.querySelector('[data-menu]');
+        if (!menu) return
+        new Menu(menu)
+    }
+    
+    createForm = () => {
+        const forms = document.querySelectorAll('form');
+        if (!forms) return
+        
+        forms.forEach(form => {
+            new Form(form)
+        })
+    }
+    
+    createFancybox = () => {
+        Fancybox.bind('[data-fancybox]', {
+            defaultType: 'inline'
+        })
     }
 }
 

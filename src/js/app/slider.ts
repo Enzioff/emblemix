@@ -120,19 +120,32 @@ class Slider {
         const slider = this.el.querySelector('.swiper');
         new Swiper(slider, {
             modules: [EffectCoverflow],
-            slidesPerView: 5,
-            spaceBetween: 40,
+            slidesPerView: 3,
+            spaceBetween: 10,
             effect: "coverflow",
             centeredSlides: true,
             initialSlide: 2,
             loop: true,
             coverflowEffect: {
-                rotate: 15,
-                stretch: -10,
-                depth: -80,
+                rotate: 30,
+                stretch: 0,
+                depth: -30,
                 modifier: 1,
                 slideShadows: false,
             },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
+                    coverflowEffect: {
+                        rotate: 15,
+                        stretch: -10,
+                        depth: -80,
+                        modifier: 1,
+                        slideShadows: false,
+                    },
+                }
+            }
         })
     }
     

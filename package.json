@@ -37,6 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.19.1",
     "autoprefixer": "^10.4.17",
+    "axios": "^1.7.9",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.7.3",
     "eslint": "^8.56.0",
@@ -64,6 +65,7 @@
     "last 3 versions"
   ],
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "swiper": "^11.1.15",
     "the-new-css-reset": "^1.11.2"
   }

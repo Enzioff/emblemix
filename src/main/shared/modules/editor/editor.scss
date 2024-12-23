@@ -1,0 +1,50 @@
+.editor {
+  h3 {
+    display: flex;
+    min-height: 51px;
+    font-family: $font-main;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: $primary;
+
+    @include r($mobile) {
+      min-height: 39px;
+      font-size: 26px;
+      line-height: 39px;
+    }
+  }
+
+  li,
+  p,
+  a {
+    font-family: $font-second;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $primary-black;
+
+    @include r($mobile) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+
+  span,
+  b {
+    font-weight: 600;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

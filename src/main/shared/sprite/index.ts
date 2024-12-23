@@ -10,3 +10,4 @@ import './map.svg';
 import './icon-search.svg';
 import './icon-arrow.svg';
 import './icon-chevrone.svg';
+import './icon-accept.svg';

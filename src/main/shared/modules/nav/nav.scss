@@ -4,6 +4,13 @@
   flex-wrap: wrap;
   gap: 0 48px;
 
+  @include r($mobile) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 11px;
+  }
+
   &__link {
     display: flex;
     font-family: $font-second;
@@ -14,6 +21,20 @@
     color: $primary;
     cursor: pointer;
     transition: .2s linear;
+
+    @include r($mobile) {
+      width: 100%;
+      padding: 8px 9px;
+      background-color: rgba($primary, 0.1);
+      border-radius: 8px;
+    }
+
+    &.active {
+      @include r($mobile) {
+        color: $white;
+        background: $primary;
+      }
+    }
 
     &:hover {
       opacity: 0.7;

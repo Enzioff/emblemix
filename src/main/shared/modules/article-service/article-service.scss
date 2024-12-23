@@ -5,6 +5,7 @@
   padding: 20px;
   height: 242px;
   background-color: $lavender;
+  overflow: hidden;
 
   @include r($mobile) {
     height: 226px;

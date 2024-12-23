@@ -1,0 +1,15 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  min-width: 437px;
+  background-color: $white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+  }
+}

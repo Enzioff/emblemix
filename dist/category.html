@@ -26,23 +26,36 @@
                     <use xlink:href="./assets/sprite.svg#icon-search"></use>
                 </svg>
             </a>
-            <div class="burger">
+            <div class="burger" data-burger>
                 <span class="burger__item"></span>
             </div>
         </div>
     </div>
-    <!-- <div class="menu">
+    <div class="menu" data-menu>
         <div class="container">
             <div class="menu__wrapper">
+                <form class="search-form search-form--menu" action="#" data-form="search">
+                    <label class="search-form__item">
+                        <svg class="search-form__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-search"></use>
+                        </svg>
+                        <input class="search-form__input" type="search" name="q" placeholder="Поиск">
+                    </label>
+                </form>
                 <nav class="nav">
-                    <a href="#" class="nav__link">О нас</a>
-                    <a href="#" class="nav__link">Контакты</a>
+                    <a href="#" class="nav__link active">Категории</a>
                     <a href="#" class="nav__link">Услуги</a>
-                    <a href="#" class="nav__link">Категории</a>
+                    <a href="#" class="nav__link">Контакты</a>
+                    <a href="#" class="nav__link">О нас</a>
                 </nav>
+                <div class="menu__info">
+                    <p class="menu__text">Контакты</p>
+                    <a class="link link--red" href="tel:8 (982)-625-22-27">8 (982)-625-22-27</a>
+                    <a class="link link--red" href="tel:8 (922)-197-17-19">8 (922)-197-17-19</a>
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </header>
 
 <div class="main main--offset">
@@ -177,7 +190,7 @@
     <a href="./contact.html" class="temp__link">Контакты</a>
     <a href="./404.html" class="temp__link">404</a>
     <a href="./search.html" class="temp__link">Поиск</a>
-    <a href="#" class="temp__link">Политика</a>
+    <a href="./policy.html" class="temp__link">Политика</a>
 </div>
 
 <script defer src="bundle.js"></script></body>

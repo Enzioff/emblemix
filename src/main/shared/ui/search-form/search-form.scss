@@ -34,4 +34,12 @@
       color: #3429454D;
     }
   }
+
+  &--menu {
+    .search-form__item {
+      padding: 8px 9px;
+      background-color: rgba($primary, 0.1);
+      border-radius: 8px;
+    }
+  }
 }

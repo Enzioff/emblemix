@@ -124,8 +124,32 @@
             </div>
         </div>
     </section>
+    <section class="section section--rounded">
+        <div class="container">
+            <div class="address">
+                <div class="address__info">
+                    <h2 class="title">Где нас найти</h2>
+                    <p class="address__text text">
+                        Город Екатеринбург, улица Василия<br>
+                        Еремина, 12, офис 334
+                    </p>
+                    <div class="address__links">
+                        <a href="tel:+8(982)-625-22-27" class="link">8 (982)-625-22-27</a>
+                        <a href="tel:+8 (922)-197-17-19" class="link">8 (922)-197-17-19</a>
+                    </div>
+                    <button class="button" data-fancybox data-src="feedback">бесплатная консультация</button>
+                </div>
+                <div class="address__map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A78802f143f35aff9368db578b583631458d812710793f54cf306c3c2f84a9362&amp;source=constructor"
+                        width="674" height="428" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.hidden %>
 <%= htmlWebpackPlugin.options.widgets.temp %>
 </body>
 </html>

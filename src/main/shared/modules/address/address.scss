@@ -2,16 +2,34 @@
   display: flex;
   justify-content: space-between;
 
+  @include r($mobile) {
+    flex-direction: column;
+    gap: 50px;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
     gap: 24px;
     max-width: 377px;
+
+    @include r($mobile) {
+      max-width: 100%;
+    }
   }
 
   &__text {
     font-size: 15px;
     font-weight: 400;
     line-height: 30px;
+  }
+
+  &__map {
+    @include r($mobile) {
+      display: flex;
+      margin-left: -24px;
+      width: calc(100% + 48px);
+      height: 100%;
+    }
   }
 }
